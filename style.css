@@ -1,0 +1,511 @@
+body {
+    font-size: 14px;
+    line-height: 1.28571em;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #333;
+}
+ul {
+    list-style: none;
+    padding: 0 50px;
+}
+header {
+    background-color: black;
+}
+.wrapper {
+    max-width: 960;
+    margin: 0 auto;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+}
+.auth {
+    display: flex;
+}
+.navbar ul li {
+    color: #fff;
+    display: block;
+    padding: 9px 12px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background: none;
+    margin-right: 12px
+}
+.menu li:hover, .login:hover {
+    border-bottom: 2px solid #fff;
+    padding: 9px 12px 8px;
+
+    cursor: pointer;
+}
+.auth .signup {
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    padding: 7px 24px 8px;
+}
+.auth .signup:hover {
+    background-color: #fff;
+    color: #666;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+form {
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 4px;
+}
+form input {
+    width: 43%;
+    font-size: 16px;
+    margin: 5px 0;
+    outline: none;
+    border: none;
+}
+form input::placeholder {
+    color: rgb(49, 48, 48);
+}
+form label {
+    color: #666;
+    font-size: 17px;
+    padding: 10px;
+    font-weight: 700;
+}
+form #find {
+    border-right: 1px solid #999;
+}
+form img {
+    width: 24px;
+    background-color: #d32323;
+    padding: 0 20px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+form img:hover {
+    background-color: #be2020;
+}
+.home-category {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.home-category li {
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.home-category li:hover {
+    text-decoration: underline;
+}
+.home-category li i {
+    padding-right: 5px;
+}
+.blm {
+    width: 400px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.blm span {
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    text-align-last: center;
+}
+.blm p {
+    color: #fff;
+    font-size: 12px;
+    text-align-last: center;
+}
+.blm a {
+    color: #fff;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+}
+.best-business {
+    background-color: #f5f5f5;
+}
+.best-business h1{
+    font-weight: 700;
+    font-size: 18px;
+    color: #d32323;
+    padding: 24px;
+    margin: 0;
+    text-align: center;
+}
+.best-business .business-items {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.business-items .item {
+    margin: 0 20px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+}
+.business-items .item:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,.1);
+    cursor: pointer;
+}
+.business-items img {
+    width: auto;
+    height: 174px;
+    border-radius: 4px 4px 0 0;
+}
+.business-items p {
+    color: #333;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    padding: 6px 0;
+    border-radius: 0 0 4px 4px;
+}
+.city-filter h1 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #d32323;
+    padding-top: 24px;
+    padding-bottom: 12px;
+    margin: 0;
+    text-align: center;
+}
+.city-filter .cities ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+}
+.cities li {
+    padding: 12px 12px;
+    font-size: 13px;
+    color: #666666;
+    cursor: pointer;
+}
+.cities li:hover {
+    border-bottom: 3px solid #d32323;
+}
+.cities i {
+    padding-right: 5px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 16px;
+    color: #d32323;
+    padding: 24px;
+    margin: 0;
+    text-align: center;
+}
+.hot-businessess {
+    display: flex;
+    gap: 20px;
+}
+.hot-businessess .item{
+    max-width: 33.33333%;
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.hot-businessess .item img {
+    max-width: 100%;
+}
+.item .content {
+    padding: 12px;
+}
+.item .content h4 {
+    margin: 0;
+    color: #0073bb;
+    padding-bottom: 6px;
+}
+.star {
+    background: url(https://s3-media0.fl.yelpcdn.com/assets/public/stars.yji-9bec2045845c24d3bff3ddb582884eda.png) no-repeat;
+    background-size: 132px 560px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 102px;
+    height: 18px;
+    background-position: 0 -402px;
+    position: relative;
+    overflow: hidden;
+    margin: -1px 6px 0 0;
+}
+.last-open .fire-icon {
+    width: 18px;
+}
+.last-open span {
+    vertical-align: super;
+    padding-left: 5px;
+    color: #f15c00;
+}
+.yelp-grid .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+.yelp-grid .content {
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: unset;
+}
+.yelp-grid img {
+    width: 100%;
+    height: 260px;
+    border-radius: 4px 4px 0 0;
+}
+.yelp-grid p, .yelp-grid h4 {
+    display: block;
+    padding: 10px;
+    margin: 0;
+}
+.yelp-grid span {
+    display: block;
+    color: #999;
+    padding-left: 10px;
+    margin-bottom: 12px;
+}
+.profile {
+    display: flex;
+    padding: 10px;
+}
+.profile-pic {
+    width: 60px!important;
+    height: 60px!important;
+    border-radius: 4px!important;
+}
+.profile .profile-star {
+    width: 18px;
+    height: unset;
+    padding-left: 5px;
+}
+.user-stats {
+    display: flex;
+}
+.user-stats .people, .user-stats .profile-ratings {
+    display: flex;
+    align-items: center;
+}
+.user-stats span {
+    margin: 0;
+    padding: 0 5px;
+}
+.people .profile-star {
+    width: 24px;
+    height: unset;
+    padding-left: 10px;
+}
+.details h4 {
+    padding: 0 15px;
+}
+.user-stats a {
+    text-decoration: none;
+    color: #f15c00;
+    font-weight: 700;
+}
+.elite {
+    display: flex;
+    align-self: center;
+}
+.details p {
+    padding: 0 15px!important;
+    display: -webkit-inline-box;
+}
+.details .highlight {
+    color: #0073bb;
+    font-weight: 700;
+    padding-left: 5px;
+}
+.review-of-the-day img {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+.review-of-the-day {
+    display: flex;
+    height: 24px;
+    justify-content: space-between;
+    background-color: #d0ecfb;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+.review-of-the-day p {
+    align-self: center;
+}
+.review-stars {
+    display: flex;
+    padding: 15px 0 0 15px;
+}
+.collection-item {
+    display: flex;
+    border-bottom: 1px solid #e6e6e6;
+}
+.collection-item img {
+ width: 72px;
+ height: 72px;
+ margin: 10px;
+ border-radius: 4px;
+}
+.right span {
+    padding-top: 32px;
+}
+.right a {
+    color: #0073bb;
+    text-decoration: none;
+}
+h1  {
+    font-weight: 700;
+    font-size: 21px!important;
+    color: #d32323;
+    padding: 24px;
+    margin: 0;
+    text-align: center;
+}
+.recent-activity .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.recent-activity .content {
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: unset;
+}
+.recent-activity .user {
+    display: flex;
+}
+.recent-activity .user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px!important;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.recent-activity .user h4 {
+    padding-bottom: unset!important;
+}
+.recent-activity .user .profile {
+    display: block!important;
+}
+.recent-activity .post .image-container {
+height: 115px;
+}
+
+.recent-activity .post .image{
+    height: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.recent-activity .post .content {
+    padding: 10px;
+}
+.recent-activity .post h4 {
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+.recent-activity .post p {
+    line-height: 1.4em;
+}
+.browse {
+    background: #f5f5f5;
+    margin-top: 100px;
+}
+.browse .row {
+    display: flex;  
+    gap: 30px;
+}
+.browse .item {
+    flex: 1;
+    padding: 11px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+}
+.browse img, .browse strong {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.browse .row {
+    padding-bottom: 30px;
+}
+.browse .item:hover {
+    border-color: #0073bb;
+    box-shadow: 0 6px 12px rgba(0,0,0,.1);
+    cursor: pointer;
+}
+.yelp-apps {
+    padding: 50px 0;
+    border-bottom: 1px solid #ccc;
+}
+.yelp-apps .row {
+    display: flex;
+    gap: 30px;
+}
+.yelp-apps .item {
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    flex: 1;
+    padding: 30px
+}
+.yelp-apps .item:hover {
+    border-color: #0073bb;
+    box-shadow: 0 6px 12px rgba(0,0,0,.1);
+    cursor: pointer;  
+}
+.yelp-apps img, .yelp-apps strong {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+footer {
+    background-color: #f5f5f5;
+}
+footer .wrapper {
+    display: flex;
+    padding-top: 50px;
+}
+footer a {
+    display: block;
+    text-decoration: none;
+    color: #0073bb;
+    margin-bottom: 6px;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer .links {
+    flex: 1;
+}
+footer h3 {
+    font-weight: 700;
+    padding: 20px 0;
+    font-size: 16px;
+    color: #d32323;
+    margin: 0;
+}
+footer .city-image {
+    background: url(https://s3-media0.fl.yelpcdn.com/assets/public/footer_cityscape.yji-573fa19c843556eac5a998fc6d1f80f8.png) no-repeat bottom;
+    background-size: 660px 140px;
+    margin: 42px auto 0;
+    height: 140px;
+}
+footer p {
+    padding-top: 20px;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+}
